@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Testimonio from './ProductInformation';
+import Testimonial from './ProductInformation';
 
 function ProductAllInformation() {
-  const [alimentos, setAlimentos] = useState([]);
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    // Realiza una solicitud para obtener todos los alimentos desde la ruta del servidor
-    axios.get('/api/alimentos/mostraralimentos')
+    // Make a request to fetch all products from the server route
+    axios.get('/api/products/showproducts')
       .then((response) => {
-        setAlimentos(response.data);
+        setProducts(response.data);
       })
       .catch((error) => {
         console.error(error);
@@ -18,15 +18,15 @@ function ProductAllInformation() {
 
   return (
     <div>
-      <h2>Información de Alimentos</h2>
-      <div className="testimonios-container">
-        {alimentos.map((alimento) => (
-          <Testimonio
-            key={alimento.iduproduct}
-            nombre={alimento.name}
-            cargo={`Precio: ${alimento.price}`}
-            testimonio={alimento.description}
-            imagen={"Foo2"} // Supongo que tienes imágenes con el mismo nombre que el 'iduproduct'
+      <h2>Food Information</h2>
+      <div className="testimonials-container">
+        {products.map((product) => (
+          <Testimonial
+            key={product.productId}
+            name={product.name}
+            position={`Price: ${product.price}`}
+            testimony={product.description}
+            image={"Foo2"} // I assume you have images with the same name as 'productId'
           />
         ))}
       </div>
@@ -35,3 +35,4 @@ function ProductAllInformation() {
 }
 
 export default ProductAllInformation;
+

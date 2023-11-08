@@ -1,27 +1,25 @@
-const express = require('express')
+const express = require('express');
 
-const app = express()
+const app = express();
 
-//importar coneccion
-const archivoBD = require('./coneccion')
+// Import connection
+const dbFile = require('./connection');
 
-//importacion de rutas y modelo de usuario
-const rutaUsuario = require('./rutas/usuario')
-const rutaAlimento = require('./rutas/producto')
+// Import routes and user model
+const userRoute = require('./routes/user');
+const productRoute = require('./routes/product');
 
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: 'true' }));
 
-const bodyParser = require('body-parser')
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({extends:'true'}))
+app.use('/api/user', userRoute);
+app.use('/api/products', productRoute);
 
-app.use('/api/usuario',rutaUsuario)
-app.use('/api/alimentos',rutaAlimento)
+app.get('/', (req, res) => {
+    res.end('Welcome to the backend server');
+});
 
-app.get('/',(req,res)=>{
-    res.end('Bienvenidos al servidor backend')
-})
-
-app.listen(5001, function(){
-    console.log("El servidor NODE gaston esta correiendo corectamente")
-
-})
+app.listen(5002, function () {
+    console.log("The NODE server is running correctly");
+});

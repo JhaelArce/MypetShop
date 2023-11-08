@@ -1,26 +1,23 @@
 import React from 'react';
 import './Testimonio.css'
 
-function Testimonio(props){
-    return (
-        <div className='container-witness'>
-<img
-  className='image-witness'
-  src={require(`./${props.imagen}.jpeg`)}
-  alt={props.nombre} // Elimina 'pet image' y usa 'props.nombre' para hacerlo más descriptivo
-/>
+function Testimonial(props) {
+  return (
+      <div className='witness-container'>
+          <img
+              className='witness-image'
+              src={require(`./${props.image}.jpeg`)}
+              alt={props.name} // Replace 'pet image' with 'props.name' for a more descriptive alt text
+          />
 
-
-
-          <div className='container-text-witness'>
-            <p className='name-witness'>
-                {props.nombre}
-            </p>
-            <p className='position-witness'>{props.cargo}</p> {/*  */}
-            <p className='text-testimony'> {props.testimonio} </p>
+          <div className='text-container-witness'>
+              <p className='witness-name'>
+                  {props.name}
+              </p>
+              <p className='witness-position'>{props.position}</p>
+              <p className='testimonial-text'>{props.testimony}</p>
           </div>
-        </div>
-    );
+      </div>
+  );
 }
-
-export default Testimonio;
+export default Testimonial;
