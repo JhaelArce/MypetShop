@@ -20,6 +20,6 @@ app.get('/', (req, res) => {
     res.end('Welcome to the backend server');
 });
 
-app.listen(5002, function () {
+app.listen(7000, function () {
     console.log("The NODE server is running correctly");
 });

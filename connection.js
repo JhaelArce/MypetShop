@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
+// fot5s3nZTj16toGw
 //mongoose.connect('mongodb+srv://gaston:aQZ2DCbqVdnd37iz@cluster0.gswhopq.mongodb.net/productos')
 mongoose.connect('mongodb+srv://novateammypetshop:PNe5EGUIt2OHALOH@cluster0.n4sbjz1.mongodb.net/MyPetShop')
-
+//mongoose.connect('mongodb+srv://nova:fot5s3nZTj16toGw@cluster0.n4sbjz1.mongodb.net/MyPetShop')
 const dbObject = mongoose.connection;
 
 dbObject.on('connected', () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import './AnimalTypeButtons.css';
+import '../Css/AnimalTypeButtons.css';
 
 
 function AnimalTypeButtons() {
