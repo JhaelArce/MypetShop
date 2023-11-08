@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import UserList from './UserList';
-import AddUser from './AddUsers';
-import EditUser from './EditUser';
+import UserList from './components/UserList';
+import AddUser from './components/AddUsers';
+import EditUser from './components/EditUser';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ProductAllInformation from './ProductAllInformation';
+import ProductAllInformation from './components/ProductAllInformation';
 
 function App() {
   return (

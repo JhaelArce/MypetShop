@@ -1,12 +1,12 @@
 import React from 'react';
-import './Testimonio.css'
+import '../Testimonio.css'
 
 function Testimonial(props) {
   return (
       <div className='witness-container'>
           <img
               className='witness-image'
-              src={require(`./${props.image}.jpeg`)}
+              src={require(`../${props.image}.jpeg`)}
               alt={props.name} // Replace 'pet image' with 'props.name' for a more descriptive alt text
           />
 
