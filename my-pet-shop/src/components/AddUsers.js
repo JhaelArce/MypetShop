@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from 'axios';
 import '../Css/AddUser.css';
 import Header from './Header.js'; // Importa el componente Header
+import Footer from "./Footer.js";
 
 function AddUser() {
     const [firstName, setFirstName] = useState('');
@@ -119,6 +120,7 @@ function AddUser() {
             </div>
             <p className="signin">Already have an account? <a href="#">Sign In</a></p>
         </form>
+        <Footer />
         </div>
     );
 }
