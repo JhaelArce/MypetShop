@@ -1,85 +1,150 @@
-/* Estilos para los labels */
-.form-group label {
-    text-align: left; /* Alinea los labels a la izquierda */
-    display: block; /* Hace que cada label ocupe toda la línea para que quede alineado con el campo de texto */
-    margin-bottom: 5px; /* Agrega un pequeño espacio entre el label y el campo de texto */
-}
-
-/* Estilos para los campos de texto */
-.form-control {
-    padding: 10px; /* Agrega padding a los campos de texto, ajusta el valor según tus preferencias */
-    margin-bottom: 10px; /* Agrega espacio entre el campo de texto y el label debajo */
-    background-color: #E4EBF0; /* Establece el color de fondo del campo de texto */
-    border: 1px solid #000; /* Agrega un borde negro a los campos de texto */
-    /* Ajusta el ancho de los campos de texto para que coincida con el contenedor */
-    width:100% ;
-}
-
-/* Estilos para el contenedor de botones */
-.button-container {
+.form {
     display: flex;
-    flex-direction: column; /* Alinea los elementos en columna para centrar verticalmente */
+    flex-direction: column;
+    gap: 10px;
+    background-color:rgba(228, 235, 240, 0.75);
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    margin-top: 30px; /* Agrega espacio entre el último campo de texto y el botón */
-    margin-bottom: 20px;
-}
-
-/* Estilos para el botón "Sign Up" */
-.btn.btn-success {
-    background-color: #BDD1DE; /* Cambia el color de fondo del botón a #BDD1DE */
-    font-weight: bold; /* Hace que la letra del botón sea negrita */
-    color: #000; /* Cambia el color de texto del botón a negro */
-
-    /* Cambia el color del botón al hacer clic */
-    transition: background-color 0.3s;
-}
-
-.btn.btn-success:active {
-    background-color: #8498A1; /* Cambia el color de fondo del botón cuando se hace clic para que combine con #BDD1DE */
-}
-
-/* Estilos para el botón de Google */
-.btn-google {
+    padding-left: 30px;
+  }
+  
+  .message,
+  .signin {
+    margin-bottom: 6px;
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: royalblue;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .form-fields {
     display: flex;
-    align-items: center;
-    background-color:  #4286f5; /* Establece el fondo azul para el botón */
-    padding: 5px 60px; /* Ajusta el relleno para crear espacio alrededor del texto */
-    border-radius: 5px; /* Agrega bordes redondeados al botón */
-
-    /* Estilo para el texto "Google" */
-    color: white; /* Color blanco para el texto */
-    font-weight: bold; /* Hace que la letra del texto sea negrita */
-    width: 230px;
-
-}
-.btn-facebook-alternate {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-field {
     display: flex;
-    align-items: center;
-    background-color: #3a5795; /* Cambia el color de fondo del botón de Facebook aquí */
-    padding: 5px 60px; /* Ajusta el relleno para crear espacio alrededor del texto */
-    border-radius: 5px; /* Agrega bordes redondeados al botón */
-
-    /* Estilo para el texto "Facebook" */
-    color: white; /* Color blanco para el texto */
-    font-weight: bold; /* Hace que la letra del texto sea negrita */
-    width: 230px;
-}
-.btn-facebook-alternate img {
-    width: 20px; /* Ajusta el ancho de la imagen según tus preferencias */
-    height: 20px;
-    margin-right: 10px; /* Agrega un margen a la derecha de la imagen para separarla del texto */
-}
-
-.btn-google img {
-    width: 20px; /* Ajusta el ancho de la imagen según tus preferencias */
-    height: 20px;
-    margin-right: 10px; /* Agrega un margen a la derecha de la imagen para separarla del texto */
-}
-
-.white-container {
-    background: white;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .form-field label {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+    text-align: left;
+    
+  }
+  
+  .form-field input {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
     border-radius: 10px;
-  height: auto; /* Puedes ajustar la altura según tus necesidades */
+    font-size: 16px;
+  }
+  
+  .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente el botón */
+    border: none;
+    outline: none;
+    padding: 8px 20px; /* Ajusta el tamaño del botón a 8px de alto y 20px de ancho */
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: royalblue;
+    color: #fff;
+  }
+  
+  .google-button {
+    background-color: #4285F4; /* Color de fondo de Google */
+    color: #fff;
+    border-radius: 10px;
+    
 
   }
+  
+  .facebook-button {
+    background-color: #3b5998; /* Color de fondo de Facebook */
+    color: #fff;
+    border-radius: 10px;
+
+  }
+  
+  .submit:hover {
+    background-color: rgb(56, 90, 194);
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+  
+  .social-buttons {
+    display: flex;
+    flex-direction: column; /* Muestra los botones de forma vertical */
+    gap: 10px;
+  }
+  
+  .social-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .social-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  .social-button:hover {
+    background-color: rgb(56, 90, 194);
+  }
+  .google-button,
+.facebook-button {
+  display: inline-block; /* Cambiar a inline-block para que estén en línea */
+  width: calc(50% - 5px); /* Calcular el ancho para que tengan un espacio entre ellos */
+  margin-right: 10px; /* Añadir un margen a la derecha para la separación */
+}.social-buttons-container {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre los botones */
+    gap: 10px; /* Separación entre los botones */
+  }
+  

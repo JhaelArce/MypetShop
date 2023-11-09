@@ -1,0 +1,42 @@
+/* styles.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Cambia el color de fondo a tu preferencia */
+    padding: 10px 20px;
+    color: #fff; /* Cambia el color de texto a tu preferencia */
+  }
+  
+  .logo {
+    flex: 1; /* La parte izquierda ocupa tanto espacio como sea posible */
+  }
+  
+  .logo img {
+    max-width: 100px; /* Ajusta el tamaño de la imagen del logo según tus necesidades */
+  }
+  
+  .search {
+    flex: 2; /* El buscador ocupa más espacio en el centro */
+    text-align: center;
+  }
+  
+  .search input {
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #ccc; /* Estilo del borde del input */
+    border-radius: 5px; /* Borde redondeado */
+  }
+  
+  .icons {
+    flex: 1; /* La parte derecha ocupa tanto espacio como sea posible */
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .cart-icon,
+  .user-icon {
+    margin-left: 10px; /* Espacio entre los iconos de carrito y usuario */
+  }
+  
