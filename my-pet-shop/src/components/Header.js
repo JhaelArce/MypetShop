@@ -1,25 +1,35 @@
 import React from 'react';
-import '../Css/Header.css'; // Importa tu archivo CSS
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons';
+import '../Css/Header.css';
 
-const Header = () => {
+function Header() {
   return (
-    <div className="header">
+    <header className="header">
       <div className="logo">
-        <img src="tu_logo.png" alt="Logo" />
+        {/* Aquí puedes agregar tu logo */}
+        <img src="https://www.mypetshop.co.za/wp-content/uploads/2019/11/My-petshop-LOGO.png" alt="Logo" />
       </div>
-      <div className="search">
-        <input type="text" placeholder="Buscar..." />
-      </div>
-      <div className="icons">
-        <div className="cart-icon">
-          <i className="fas fa-shopping-cart"></i>
-        </div>
-        <div className="user-icon">
-          <i className="fas fa-user"></i>
-        </div>
-      </div>
+        
+      <div className="InputContainer">
+      <input
+        placeholder="Search.."
+        id="input"
+        className="input"
+        name="text"
+        type="text"
+      />
     </div>
+    
+      <div className="icons">
+        <FontAwesomeIcon icon={faShoppingCart} />
+        <FontAwesomeIcon icon={faUser} />
+      </div>
+    </header>
   );
-};
+}
 
 export default Header;
+
+
+

@@ -9,6 +9,8 @@
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
+    margin-top: 40px;
+
   }
   
   .title {
@@ -142,7 +144,8 @@
   display: inline-block; /* Cambiar a inline-block para que estén en línea */
   width: calc(50% - 5px); /* Calcular el ancho para que tengan un espacio entre ellos */
   margin-right: 10px; /* Añadir un margen a la derecha para la separación */
-}.social-buttons-container {
+}
+.social-buttons-container {
     display: flex;
     justify-content: space-between; /* Espaciado entre los botones */
     gap: 10px; /* Separación entre los botones */

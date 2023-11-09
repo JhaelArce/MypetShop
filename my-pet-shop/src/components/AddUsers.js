@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import '../Css/AddUser.css';
+import Header from './Header.js'; // Importa el componente Header
 
 function AddUser() {
     const [firstName, setFirstName] = useState('');
@@ -31,9 +32,12 @@ function AddUser() {
     }
 
     return (
+        <div>
+            <Header />
+
         <form className="form" onSubmit={signUpUser}>
             <p className="title">Register</p>
-            <p className="message">Signup now and get full access to our app.</p>
+            <p className="message">Register now and get full access to other features</p>
             <div className="form-fields">
                 <div className="form-field">
                     <label htmlFor="firstName">First Name</label>
@@ -115,6 +119,7 @@ function AddUser() {
             </div>
             <p className="signin">Already have an account? <a href="#">Sign In</a></p>
         </form>
+        </div>
     );
 }
 
