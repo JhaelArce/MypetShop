@@ -41,7 +41,7 @@ router.get('/getusers', async (req, res) => {
         res.status(500).send(error.message);
     }
 });
-
+// Route to get user data by userId
 router.post('/getuserdata', async (req, res) => {
     try {
         const users = await UserModel.find({ userId: req.body.userId });

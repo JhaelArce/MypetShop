@@ -7,7 +7,7 @@ import Footer from "./Footer.js";
 function AddUser() {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
-    const [username, setUsername] = useState('');
+    const [userName, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [customValidationMessage, setCustomValidationMessage] = useState('');
@@ -16,7 +16,7 @@ function AddUser() {
         e.preventDefault();
 
         // Check if any required fields are empty
-        if (!firstName || !lastName || !username || !email || !password) {
+        if (!firstName || !lastName || !userName || !email || !password) {
             setCustomValidationMessage('');
             return; // Do not proceed with form submission
         }
@@ -27,7 +27,7 @@ function AddUser() {
         const user = {
             firstName: firstName,
             lastName: lastName,
-            username: username,
+            username: userName,
             email: email,
             password: password,
         };
@@ -83,7 +83,7 @@ function AddUser() {
                             type="text"
                             id="username"
                             className="input"
-                            value={username}
+                            value={userName}
                             onChange={(e) => { setUsername(e.target.value); handleInputChange(e); }}
                         />
                     </div>
