@@ -7,7 +7,11 @@ const productSchema = new Schema({
     name: String,
     description: String,
     price: String,
-    productId: String
+    productId: String,
+    type: String,   
+    species: String,   
+    image: String,     
+    quantity: Number   
 });
 
 const ProductModel = mongoose.model('products', productSchema);
@@ -23,3 +27,4 @@ router.get('/showproducts', async (req, res) => {
 });
 
 module.exports = router;
+
