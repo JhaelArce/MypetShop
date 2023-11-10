@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import '../Css/AddUser.css';
+import uniqid from 'uniqid';
 import Header from './Header.js'; 
 import Footer from "./Footer.js";
 
@@ -27,9 +28,10 @@ function AddUser() {
         const user = {
             firstName: firstName,
             lastName: lastName,
-            username: userName,
+            userName: userName,
             email: email,
             password: password,
+            userId: uniqid()
         };
 
         console.log(user);

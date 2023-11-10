@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-    firstName: String, // Corregido el nombre del campo
+    firstName: String, 
     lastName: String,
     userName: String,
     email: String,
@@ -17,7 +17,7 @@ const UserModel = mongoose.model('users', userSchema);
 router.post('/adduser', async (req, res) => {
     try {
         const newUser = new UserModel({
-            firstName: req.body.firstName, // Corregido el nombre del campo
+            firstName: req.body.firstName, 
             lastName: req.body.lastName,
             userName: req.body.userName,
             email: req.body.email,
@@ -41,7 +41,7 @@ router.get('/getusers', async (req, res) => {
         res.status(500).send(error.message);
     }
 });
-// Route to get user data by userId
+
 router.post('/getuserdata', async (req, res) => {
     try {
         const users = await UserModel.find({ userId: req.body.userId });
