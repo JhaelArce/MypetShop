@@ -15,13 +15,14 @@
   
   .input-label {
     margin-bottom: 8px;
-    color: #2980b9; /* Puedes usar el mismo tono de azul oscuro del título */
+    color: #2980b9; 
+
   }
   
   .input-field {
     width: 100%;
     padding: 8px;
-    margin: 4px 0; /* Ajuste en el margen superior e inferior */
+    margin: 4px 0; 
     box-sizing: border-box;
     border: 1px solid #3498db;
     border-radius: 3px;
