@@ -14,13 +14,23 @@
     align-items: center;
   }
   
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
   .social-icons {
     display: flex;
-    gap: 10px; /* Espacio entre los íconos */
+    gap: 20px;
   }
   
   .social-icon {
-    font-size: 100px; /* Tamaño de los íconos */
+    font-size: 24px; 
+    transition: color 0.3s; 
+  }
+  
+  .social-icon:hover {
+    color: #BDD1DE;
   }
   
   .menu-list {
@@ -30,9 +40,16 @@
   
   .menu-list li {
     margin: 5px 0;
+    transition: transform 0.3s; 
+  }
+  
+  .menu-list li:hover {
+    transform: scale(1.1); 
   }
   
   .logo {
-    width: 40px; /* Tamaño del logo */
+    align-content: center;
+    width: 90px; 
+    margin-right: 50px; 
   }
   

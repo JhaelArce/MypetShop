@@ -7,28 +7,27 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="column">
-        <img src="https://www.mypetshop.co.za/wp-content/uploads/2019/11/My-petshop-LOGO.png" alt="Logo" />
+        <img src="https://www.mypetshop.co.za/wp-content/uploads/2019/11/My-petshop-LOGO.png" alt="Logo" className="logo" />
         <p>Follow us</p>
         <div className="social-icons">
-      <FontAwesomeIcon icon={faFacebook} />
-      <FontAwesomeIcon icon={faTiktok} />
-      <FontAwesomeIcon icon={faInstagram} />
-    </div>
-        
+          <FontAwesomeIcon icon={faFacebook} className="social-icon" />
+          <FontAwesomeIcon icon={faTiktok} className="social-icon" />
+          <FontAwesomeIcon icon={faInstagram} className="social-icon" />
+        </div>
       </div>
       <div className="column">
         <ul className="menu-list">
-          <li>Inicio</li>
-          <li>Acerca de</li>
-          <li>Servicios</li>
-          <li>Contacto</li>
+        <li>Home</li>
+           <li>About</li>
+           <li>Services</li>
+           <li>Contact</li>
         </ul>
       </div>
       <div className="column">
         <ul className="menu-list">
-          <li>Términos y condiciones</li>
-          <li>Política de privacidad</li>
-          <li>Preguntas frecuentes</li>
+        <li>Terms and conditions</li>
+           <li>Privacy policy</li>
+           <li>Frequently asked questions</li>
         </ul>
       </div>
     </footer>
@@ -36,3 +35,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

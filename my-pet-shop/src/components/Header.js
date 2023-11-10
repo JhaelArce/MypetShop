@@ -7,7 +7,6 @@ function Header() {
   return (
     <header className="header">
       <div className="logo">
-        {/* Aquí puedes agregar tu logo */}
         <img src="https://www.mypetshop.co.za/wp-content/uploads/2019/11/My-petshop-LOGO.png" alt="Logo" />
       </div>
         
@@ -23,6 +22,8 @@ function Header() {
     
       <div className="icons">
         <FontAwesomeIcon icon={faShoppingCart} />
+      </div>
+      <div className="icons">
         <FontAwesomeIcon icon={faUser} />
       </div>
     </header>
