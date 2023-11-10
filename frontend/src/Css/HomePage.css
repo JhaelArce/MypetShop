@@ -1,0 +1,52 @@
+.HomePage {
+    padding: 20px;
+  }
+  
+  .top-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .top-buttons button {
+    padding: 30px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .featured-categories {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap; 
+  }
+  .category img {
+    width: 250px;
+    height: 300px;
+  }
+  .category {
+
+    margin-right: 25px; 
+  }
+  
+  .featured-categories {
+    margin-bottom: 300px;
+    display: flex; 
+  }
+  
+  .featured-categories h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .category {
+    margin-bottom: 20px;
+  }
+
+  
+  .category p {
+    text-align: center;
+  }
+  
+
+  
