@@ -4,13 +4,16 @@ import axios from 'axios';
 
 function AddProduct() {
   const [product, setProduct] = useState({
-    nombre: '',
-    descripcion: '',
-    precio: '',
-    cantidad: '',
-    imagen: '',
-    categoria: '',
+    name: '',
+    description: '',
+    price: '',
+    quantity: '',
+    image: '',
+    category: '',
+
   });
+
+  //vdsdsdvsdvsdv
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -33,12 +36,12 @@ function AddProduct() {
       });
     
     setProduct({
-      nombre: '',
-      descripcion: '',
-      precio: '',
-      cantidad: '',
-      imagen: '',
-      categoria: '',
+      name: '',
+      description: '',
+      price: '',
+      quantity: '',
+      image: '',
+      category: '',
     });
   };
 
@@ -51,7 +54,7 @@ function AddProduct() {
           <input
             type="text"
             name="nombre"
-            value={product.nombre}
+            value={product.name}
             onChange={handleInputChange}
             className="input-field"
           />
@@ -61,7 +64,7 @@ function AddProduct() {
           <label>Product descripcion:</label>
           <textarea
             name="descripcion"
-            value={product.descripcion}
+            value={product.description}
             onChange={handleInputChange}
             className="input-field"
           ></textarea>
@@ -73,7 +76,7 @@ function AddProduct() {
           <input
             type="text"
             name="precio"
-            value={product.precio}
+            value={product.price}
             onChange={handleInputChange}
           />
         </div>
@@ -83,7 +86,7 @@ function AddProduct() {
           <input
             type="text"
             name="cantidad"
-            value={product.cantidad}
+            value={product.quantity}
             onChange={handleInputChange}
           />
         </div>
@@ -93,7 +96,7 @@ function AddProduct() {
           <input
             type="text"
             name="imagen"
-            value={product.imagen}
+            value={product.image}
             onChange={handleInputChange}
           />
         </div>
@@ -103,7 +106,7 @@ function AddProduct() {
           <input
             type="text"
             name="categoria"
-            value={product.categoria}
+            value={product.category}
             onChange={handleInputChange}
           />
         </div>
