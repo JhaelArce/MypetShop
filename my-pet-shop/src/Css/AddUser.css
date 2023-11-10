@@ -1,0 +1,85 @@
+/* Estilos para los labels */
+.form-group label {
+    text-align: left; /* Alinea los labels a la izquierda */
+    display: block; /* Hace que cada label ocupe toda la línea para que quede alineado con el campo de texto */
+    margin-bottom: 5px; /* Agrega un pequeño espacio entre el label y el campo de texto */
+}
+
+/* Estilos para los campos de texto */
+.form-control {
+    padding: 10px; /* Agrega padding a los campos de texto, ajusta el valor según tus preferencias */
+    margin-bottom: 10px; /* Agrega espacio entre el campo de texto y el label debajo */
+    background-color: #E4EBF0; /* Establece el color de fondo del campo de texto */
+    border: 1px solid #000; /* Agrega un borde negro a los campos de texto */
+    /* Ajusta el ancho de los campos de texto para que coincida con el contenedor */
+    width:100% ;
+}
+
+/* Estilos para el contenedor de botones */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna para centrar verticalmente */
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; /* Agrega espacio entre el último campo de texto y el botón */
+    margin-bottom: 20px;
+}
+
+/* Estilos para el botón "Sign Up" */
+.btn.btn-success {
+    background-color: #BDD1DE; /* Cambia el color de fondo del botón a #BDD1DE */
+    font-weight: bold; /* Hace que la letra del botón sea negrita */
+    color: #000; /* Cambia el color de texto del botón a negro */
+
+    /* Cambia el color del botón al hacer clic */
+    transition: background-color 0.3s;
+}
+
+.btn.btn-success:active {
+    background-color: #8498A1; /* Cambia el color de fondo del botón cuando se hace clic para que combine con #BDD1DE */
+}
+
+/* Estilos para el botón de Google */
+.btn-google {
+    display: flex;
+    align-items: center;
+    background-color:  #4286f5; /* Establece el fondo azul para el botón */
+    padding: 5px 60px; /* Ajusta el relleno para crear espacio alrededor del texto */
+    border-radius: 5px; /* Agrega bordes redondeados al botón */
+
+    /* Estilo para el texto "Google" */
+    color: white; /* Color blanco para el texto */
+    font-weight: bold; /* Hace que la letra del texto sea negrita */
+    width: 230px;
+
+}
+.btn-facebook-alternate {
+    display: flex;
+    align-items: center;
+    background-color: #3a5795; /* Cambia el color de fondo del botón de Facebook aquí */
+    padding: 5px 60px; /* Ajusta el relleno para crear espacio alrededor del texto */
+    border-radius: 5px; /* Agrega bordes redondeados al botón */
+
+    /* Estilo para el texto "Facebook" */
+    color: white; /* Color blanco para el texto */
+    font-weight: bold; /* Hace que la letra del texto sea negrita */
+    width: 230px;
+}
+.btn-facebook-alternate img {
+    width: 20px; /* Ajusta el ancho de la imagen según tus preferencias */
+    height: 20px;
+    margin-right: 10px; /* Agrega un margen a la derecha de la imagen para separarla del texto */
+}
+
+.btn-google img {
+    width: 20px; /* Ajusta el ancho de la imagen según tus preferencias */
+    height: 20px;
+    margin-right: 10px; /* Agrega un margen a la derecha de la imagen para separarla del texto */
+}
+
+.white-container {
+    background: white;
+    border-radius: 10px;
+  height: auto; /* Puedes ajustar la altura según tus necesidades */
+
+  }
