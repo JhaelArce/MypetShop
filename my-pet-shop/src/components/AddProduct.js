@@ -21,7 +21,7 @@ function AddProduct() {
   };
 
   const handleAddProduct = () => {
-    // Aquí puedes implementar la lógica para agregar el producto a tu sistema
+   
     console.log('Producto añadido:', product);
 
     axios.post('/api/user/addproduct')
@@ -31,7 +31,7 @@ function AddProduct() {
       .catch(err => {
         console.log(err);
       });
-    // También puedes reiniciar el estado para limpiar el formulario
+    
     setProduct({
       nombre: '',
       descripcion: '',
@@ -67,7 +67,7 @@ function AddProduct() {
           ></textarea>
         </div>
 
-        {/* ... Resto de las secciones ... */}
+
         <div className="form-section">
           <label>Product price:</label>
           <input
